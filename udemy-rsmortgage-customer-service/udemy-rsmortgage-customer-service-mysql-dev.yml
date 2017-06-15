@@ -2,11 +2,11 @@ spring:
   jpa:
     database: MYSQL
     showSql: true
-    properties:
-      hibernate:
-        dialect:org.hibernate.dialect.MySQL5InnoDBDialect
-        ddl-auto:create-drop
-        generate-ddl:true
+    properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl:true
+    hibernate:     
+      ddl-auto:create-drop      
+      naming.strategy:org.hibernate.cfg.ImprovedNamingStrategy          
   datasource:
     url: jdbc:mysql://localhost:3306/rsmortgage
     username: root
