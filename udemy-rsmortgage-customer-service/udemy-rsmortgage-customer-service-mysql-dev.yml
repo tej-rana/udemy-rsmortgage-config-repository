@@ -8,7 +8,7 @@ spring:
         ddl-auto:create-drop
         generate-ddl:true
   datasource:
-    url: jdbc:mysql://localhost/rsmortgage
+    url: jdbc:mysql://localhost:3306/rsmortgage
     username: root
     password: root
     driverClassName: com.mysql.jdbc.Driver
